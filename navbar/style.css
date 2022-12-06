@@ -27,19 +27,6 @@
         font-weight: bold;
 }
 
-/* .dropdownx-content {
-
-        display: none;
-        background-color: #f9f9f9;
-      }
-.dropdownx {
-     
-       
-        display: inline-block;
-}
-.dropdownx:hover .dropdownx-content {
-        display: block;
-} */
 .cxx{
         display: flex;
         justify-content: space-between;
@@ -87,7 +74,7 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         padding: 12px 16px;
-        z-index: 12;
+        z-index: 2;
 }
 
 .dropdown1:hover .dropdown1-content {
@@ -119,14 +106,6 @@
         color: white;
 }
 
-
-/* button{
-        padding-left:  5px; 
-        border: none;
-        background-color: white;
-        font-family: 'Major Mono Display', monospace;
-        font-weight: bold;
-} */
 .Sbox{
         padding-left: 10px;
 }
@@ -137,14 +116,18 @@
         background-color: white;
         font-family: 'Major Mono Display', monospace;
         font-weight: bold;
-       font-size: 1rem; font-weight:bold ;
-          padding: 5px;
+        font-size: 1rem; 
+        font-weight:bold ;
+        padding: 5px;
         padding-left: 10px;
         padding-right: 10px;
 }
 .Sbutton:hover{
         background-color: black;
         color: white;
+}
+.cardbg{
+        background-image:url("http://source.unsplash.com/1600x1200/?technology") ;
 }
 
 
