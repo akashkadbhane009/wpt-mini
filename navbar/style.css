@@ -1,0 +1,150 @@
+
+ 
+.bodyx{
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.418);
+      
+}
+.zyx{
+        
+        background-color: white;
+        /* padding: 10px; */
+        padding-left: 10px;
+        padding-right: 10px;
+        border: solid;
+        border-width: 1px;
+        display: flex;
+        flex: 1;  
+        font-size: 1rem;
+        font-family: 'Major Mono Display', monospace;
+        font-weight: bold;
+       
+                
+}
+.fttr{
+        font-family: 'Major Mono Display', monospace;
+        font-weight: bold;
+}
+
+/* .dropdownx-content {
+
+        display: none;
+        background-color: #f9f9f9;
+      }
+.dropdownx {
+     
+       
+        display: inline-block;
+}
+.dropdownx:hover .dropdownx-content {
+        display: block;
+} */
+.cxx{
+        display: flex;
+        justify-content: space-between;
+        flex: 9;
+        
+
+}
+.cll{
+       /* display: flex; */
+       justify-content: flex-start;
+      
+       
+      
+}
+.cll1{
+        /* display: flex; */
+        justify-content: center;
+       
+}
+.cll2{
+        /* display: flex; */
+        justify-content: flex-end;
+       
+        
+}
+.listx{
+        text-decoration: none;
+        display: inline-flex;
+}
+.listx1{
+        text-decoration: none;
+        display: inline-flex;
+}
+
+
+.dropdown1 {
+        position: relative;
+        display: inline-block;
+}
+
+.dropdown1-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 12;
+}
+
+.dropdown1:hover .dropdown1-content {
+        display: block;
+}
+.a1{
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        
+
+}
+
+
+.inputx{
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+
+
+.a1:hover{
+        background-color: black;
+        color: white;
+}
+
+
+/* button{
+        padding-left:  5px; 
+        border: none;
+        background-color: white;
+        font-family: 'Major Mono Display', monospace;
+        font-weight: bold;
+} */
+.Sbox{
+        padding-left: 10px;
+}
+
+.Sbutton{
+        padding-left:  5px; 
+        border: none;
+        background-color: white;
+        font-family: 'Major Mono Display', monospace;
+        font-weight: bold;
+       font-size: 1rem; font-weight:bold ;
+          padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+.Sbutton:hover{
+        background-color: black;
+        color: white;
+}
+
+
