@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About</title>
+        <title>enquiry</title>
 
 
         <script src="https://kit.fontawesome.com/5d9a73929f.js" crossorigin="anonymous"></script>
@@ -31,7 +31,9 @@
                         <div class="cll">
                                 <ul>
                                         <div class="listx1 dropdown1">
+                                        <ul>
                                                 <li class="listx"><a class="a1" href="">&#9776;</a></li>
+                                        </ul>
                                                 <div class="zyx dropdown1-content" style="border-top: solid 1px ;">
                                                         <div class="cxx">
                                                                 <div class="cll">
@@ -192,10 +194,66 @@
                         </div>
                 </div>
         </div>
-        <main>
+        <main class="cardbg">
+                <div class=" d-flex justify-content-center " style=" padding : 250px ;  ">
+                        <!-- <button data-bs-toggle="modal" data-bs-target="#enquiryModal" href="">enquiry</button> -->
+                        <div class="card" style="width: 70rem; border-radius: 0;border: solid 3px;">
+                                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                                <div class="card-body " >
+                                   <p class="text-center card-title  ">Enquiry</p>
+                                  <p class="text-center card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a  style="display:flow-root ;border: solid 1px;" class="text-center a1  " data-bs-toggle="modal" data-bs-target="#enquiryModal" href="">Go somewhere</a>
+                                </div>
+                              </div>
+                </div>
+                <!-- enquirey modal -->
+                <div>
+                        <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                        <div class="modal-content " style="border-radius: 0 ;">
+                                                <div class="modal-header">
+                                                        <h1 class="modal-title fs-7 " style="font-weight:bold ;" id="LoginModalLabel">
+                                                                Enquiry</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <form>
+                                                                <div class="mb-3">
+                                                                        <label for="exampleInputEmail1" class="form-label">Email
+                                                                                address</label>
+                                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                                                aria-describedby="emailHelp" required>
+                                                                        <div id="emailHelp" class="form-text"></div>
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                        <label for="exampleInputPassword1"
+                                                                                class="form-label">Discription</label>
+                                                                       
+                                                                        <textarea name="" class="form-control" id="exampleInputPassword1" cols="30" rows="10"></textarea>
+                                                                </div>
+                                                                <div class="mb-3 form-check">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                                id="exampleCheck1">
+                                                                        <label class="form-check-label" for="exampleCheck1">Check me
+                                                                                out <a href="">Terms & Privacy.</a></label>
+                                                                </div>
+                                                                <button type="submit" class=" Sbutton"
+                                                                        style="border:solid 1px;">submit</button>
+                                                        </form>
+                
+                                                </div>
+                                                <div class="modal-footer">
+                                                        <button type="button" class="Sbutton" style="border:solid 1px;"
+                                                                data-bs-dismiss="modal">close</button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div> 
+                </div>
 
         </main>
-        <footer class="py-2 my-3 bg-light fw-bolder fttr" style="border: solid 1px ; ">
+        <footer class="py-2  bg-light fw-bolder fttr" style="border: solid 1px ; ">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                         <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
                         <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">about</a></li>
