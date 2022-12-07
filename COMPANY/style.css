@@ -112,7 +112,10 @@
 }
 
 .cardbg{
-        background-image:url("http://source.unsplash.com/1600x1200/?technology") ;
+        background-image:url("img/1612-1.jpg") ;
+}
+.cardbgE{
+        background-image:url("img/ebg.jpg") ;
 }
 
 
