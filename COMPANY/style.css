@@ -9,7 +9,6 @@
 .zyx{
         
         background-color: white;
-        /* padding: 10px; */
         padding-left: 10px;
         padding-right: 10px;
         border: solid;
@@ -18,9 +17,7 @@
         flex: 1;  
         font-size: 1rem;
         font-family: 'Major Mono Display', monospace;
-        font-weight: bold;
-       
-                
+        font-weight: bold;         
 }
 .fttr{
         font-family: 'Major Mono Display', monospace;
@@ -31,26 +28,19 @@
         display: flex;
         justify-content: space-between;
         flex: 9;
-        
-
 }
 .cll{
-       /* display: flex; */
-       justify-content: flex-start;
-      
        
-      
+       justify-content: flex-start;
 }
 .cll1{
-        /* display: flex; */
+      
         justify-content: center;
        
 }
 .cll2{
-        /* display: flex; */
         justify-content: flex-end;
        
-        
 }
 .listx{
         text-decoration: none;
@@ -86,12 +76,7 @@
         padding: 5px;
         padding-left: 10px;
         padding-right: 10px;
-        
-        
-
 }
-
-
 .inputx{
         text-decoration: none;
         color: black;
@@ -99,8 +84,6 @@
         padding-left: 10px;
         padding-right: 10px;
 }
-
-
 .a1:hover{
         background-color: black;
         color: white;
@@ -122,10 +105,12 @@
         padding-left: 10px;
         padding-right: 10px;
 }
+
 .Sbutton:hover{
         background-color: black;
         color: white;
 }
+
 .cardbg{
         background-image:url("http://source.unsplash.com/1600x1200/?technology") ;
 }
