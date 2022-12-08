@@ -122,6 +122,15 @@
 .bgcontact{
         background-image: url(/img/egb2.jpg);
 }
+.bgproduct{
+        background-image: url(/img/1660-1\ \(8\).jpg);
+}
+.bgvalues{
+        background-image:url(/img/clay-wallpaper-1366x768.jpg) ;
+}
+.bgabout{
+        background-image:url(/img/nicolas-cool-_6d-Hgu0Wdo-unsplash.jpg) ;
+}
 .contact-text{
         font-size: 2rem;
 }
@@ -160,9 +169,6 @@ input[type=submit] {
         padding: 20px 40px;
         border: solid;
 }
-
-
-
 .contactushead{
         color: black;
         background-color: white;
@@ -170,6 +176,25 @@ input[type=submit] {
         margin: auto;  
         padding: 20px;
         text-align: center;
+}
+.aboutbutton{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        margin-left:5% ;
+        width:90% ;
+        padding: 20px;
+       
+        text-align: left;
+}
+.cardvalues{
+        border-radius: 0;
+        border: solid 2px;
+        
+}
+.cardabout{
+      border-radius: 0;
+      border: solid 2px;
 }
       
 
