@@ -179,10 +179,10 @@
                                                         <input type="checkbox" class="form-check-input"
                                                                 id="exampleCheck1" required>
                                                         <label class="form-check-label" for="exampleCheck1">check me
-                                                                out <a href="">terms&privacy.</a></label>
+                                                                out <a href="#">terms&privacy.</a></label>
                                                 </div>
                                                 <button type="submit" class="Sbutton"
-                                                        style="border:solid 1px;">submit</button>
+                                                        style="border:solid 1px;" >submit</button>
                                         </form>
 
                                 </div>
@@ -206,33 +206,47 @@
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
-                                        <div class="modal-content">
+                                        <div class="modal-content" style="border-radius: 0 ;">
                                                 <div class="modal-header">
 
                                                         <h1 class="modal-title fs-7 fw-bold" id="exampleModalLabel">Feedback Form</h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                                 aria-label="Close"></button>
                                                 </div>
-                                                <div class="modal-body" style="text-align:left">
-                                                        <form action="/action_page.php">
-                                                                <label for="fname">Name</label><br>
-                                                                <input type="text" id="fname" name="firstname"
-                                                                        placeholder="Name"><br>
-                
-                                                                <lable for="mail">Enter Email-ID</lable><br>
-                                                                <input type="email" name="email" id="mail"
-                                                                        placeholder="Email-ID"><br>
-                
-                
-                                                                <lable for="feedback">Feedback</lable><br>
-                                                                <textarea rows="5" cols="50" placeholder="Write your feedback here..."></textarea><br>
+                                                <div class="modal-body" style="text-align: left;" >
+                                                        <form>
+                                                                <div class="mb-3">
+                                                                        <label for="exampleInputNmae" class="form-label">Name</label>
+                                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                                                aria-describedby="emailHelp" placeholder="Full Name" required>
+                                                                        
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                        <label for="exampleInputEmail1" class="form-label">email
+                                                                                address</label>
+                                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                                                aria-describedby="emailHelp" placeholder="Email" required>
+                                                                        
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                        <label for="exampleInputPassword1"
+                                                                                class="form-label">Feedback</label>
+                                                                        
+                                                                        <textarea name="" id="" cols="30" rows="5" placeholder="Write here..." required></textarea>
+                                                                </div>
+                                                                
+                                                                <button type="submit" class=" Sbutton"
+                                                                        style="border:solid 1px;">submit</button>
+                                                        </form>
                 
                                                 </div>
                                                 <div class="modal-footer">
-                                                        <button type="button" class="Sbutton" style="border: solid 1px;"
+                                                        <button type="button" class="Sbutton" style="border:solid 1px;"
                                                                 data-bs-dismiss="modal">close</button>
-                                                        <button type="button" class="Sbutton" style="border: solid 1px;">send</button>
                                                 </div>
+                
+                                                </div>
+                                                
                                         </div>
                                 </div>
                         </div>
