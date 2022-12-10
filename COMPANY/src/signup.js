@@ -34,7 +34,6 @@ function validSignup(){
         alert("Password should be atleast 6 character long");
         password.focus();
         return false;
-
     }
     
     if(password != repassword){
@@ -42,9 +41,7 @@ function validSignup(){
         password.focus();
         repassword.focus();
         return false;
-
     }
- 
     return true;
 }
 
