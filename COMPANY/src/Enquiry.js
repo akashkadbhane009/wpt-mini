@@ -16,8 +16,8 @@ function valid() {
 
     var address =
         document.forms.RegForm.Address.value;
-    var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  //Javascript reGex for Email Validation.
-    var regPhone=/^\d{10}$/;                                        // Javascript reGex for Phone Number validation.
+    var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  //Javascript reGex for Email Validation.
+    var regPhone = /^\d{10}$/;                                        // Javascript reGex for Phone Number validation.
     var regName = /\d+$/g;                                    // Javascript reGex for Name validation
 
     if (name == "" || regName.test(name)) {
@@ -31,27 +31,27 @@ function valid() {
         address.focus();
         return false;
     }
-     
+
     if (email == "" || !regEmail.test(email)) {
         window.alert("Please enter a valid e-mail address.");
         email.focus();
         return false;
     }
-      
+
     if (password == "") {
         alert("Please enter your password");
         password.focus();
         return false;
     }
 
-    if(password.length <6){
+    if (password.length < 6) {
         alert("Password should be atleast 6 character long");
         password.focus();
         return false;
 
     }
-    
-    if(password == rePassword){
+
+    if (password == rePassword) {
         alert("Password does not match!");
         password.focus();
         Repassword.focus();
@@ -93,5 +93,34 @@ function valid() {
 
 
 
+// https://sheetdb.io/api/v1/wkeqqj3ej1gn6
 
 
+
+async function Submit() {
+    var email = document.forms.Eform.EMail.value;
+    var PNO = document.forms.Eform.PNo.value;
+    var lang = document.forms.Eform.lang.value;
+    var web = document.forms.Eform.web.value;
+    var msg = document.forms.Eform.msg.value;
+console.log(email);
+console.log(PNO);
+console.log(lang);
+console.log(web);
+console.log(msg);
+
+    fetch("https://api.apispreadsheets.com/data/PjaXHBpIp7zZAcUm/", {
+        method: "POST",
+        body: JSON.stringify({"data": {"EMail":email,"PNO":PNO,"lang":lang,"web":web,"msg":msg}}),
+    }).then(res =>{
+        if (res.status === 200){
+            // SUCCESS
+            alert(res.status+res.statusText)
+        }
+        else{
+            // ERROR
+            alert(res.status+res.statusText)
+        }
+    })
+
+}
