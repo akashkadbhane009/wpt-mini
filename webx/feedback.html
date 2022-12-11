@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback</title>
+
+
+        <script src="https://kit.fontawesome.com/5d9a73929f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+        <style>
+
+
+
+
+
+        </style>
+</head>
+
+<body >
+        <header class="fttr">
+                <nav class="navbar navbar-expand-lg bg-light " >
+                    <div class="container-fluid">
+                      <a class="navbar-brand  "  href="index.html" style="font-size:2rem; font-family: sans-serif; " ><b><b>WeB X </b></b></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Values.html">values</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.html">products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="enquiery.html">enquiry</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="feedback.html">feedback</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactus.html">contact us</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#LoginModal"
+                                        href="">login</a></li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#SignupModal"
+                                        href="">signup</a></li>
+                                <li class="nav-item"><a class="nav-link" href="myaccount.html"><i style='font-size:20px; font-weight: 300;'
+                                            class='far'>&#xf2bd;</i></a></li>
+            
+                            </ul>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </nav>
+            </header>
+            
+            <!--login Modal -->
+            <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="border-radius: 0 ;">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-7 " style="font-weight:bold ;" id="LoginModalLabel">
+                                Log in</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form name="RegForm" onsubmit="return validLogin()" method="get">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">email
+                                        address</label>
+                                    <input type="email" name="EMail" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" required>
+                                    <div id="emailHelp" class="form-text">.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" name="Password"
+                                        required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">stay log in.</label>
+                                </div>
+                                <button type="submit" class=" Sbutton" style="border:solid 1px;" name="submit">submit</button>
+                            </form>
+        
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="Sbutton" style="border:solid 1px;"
+                                data-bs-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--signup Modal -->
+            <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="border-radius: 0 ;">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-7 " style="font-weight:bold ;" id="SignupModalLabel">Sign up</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form name="SignupForm" onsubmit="return validSignup()" method="get">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">username</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                        name="Name" required>
+        
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">email
+                                        address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" name="EMail" required>
+        
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" name="Password"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">re-enter password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" name="rePassword"
+                                        required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                    <label class="form-check-label" for="exampleCheck1">check me
+                                        out <a href="">terms&privacy.</a></label>
+                                </div>
+                                <button type="submit" class="Sbutton" style="border:solid 1px;" name="submit">submit</button>
+                            </form>
+        
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="Sbutton" style="border:solid 1px;"
+                                data-bs-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <main class="bgfeed">
+                <div class="container p-4 " style="text-align:center">
+                        <div class="feedbackdiv " style="font-size: 3rem;">
+                                <p>Your feedbacks are welcome.</p>
+                     
+                        <!-- Trigger the modal with a button -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="Sbutton  w-25 " style="border: solid 1px;" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">feedback</button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                        <div class="modal-content" style="border-radius: 0 ;">
+                                                <div class="modal-header">
+
+                                                        <h1 class="modal-title fs-7 fw-bold" id="exampleModalLabel">Feedback Form</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;" >
+                                                        <form>
+                                                                <div class="mb-3">
+                                                                        <label for="exampleInputNmae" class="form-label">Name</label>
+                                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                                                aria-describedby="emailHelp" placeholder="Full Name" required>
+                                                                        
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                        <label for="exampleInputEmail1" class="form-label">email
+                                                                                address</label>
+                                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                                                aria-describedby="emailHelp" placeholder="Email" required>
+                                                                        
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                        <label for="exampleInputPassword1"
+                                                                                class="form-label">Feedback</label>
+                                                                        
+                                                                        <textarea name="" id="" cols="30" rows="5" placeholder="Write here..." required></textarea>
+                                                                </div>
+                                                                
+                                                                <button type="submit" class=" Sbutton"
+                                                                        style="border:solid 1px;">submit</button>
+                                                        </form>
+                
+                                                </div>
+                                                <div class="modal-footer">
+                                                        <button type="button" class="Sbutton" style="border:solid 1px;"
+                                                                data-bs-dismiss="modal">close</button>
+                                                </div>
+                
+                                                </div>
+                                                
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+        <div  class="p-5" style="text-align:center">
+                <h2 class="text-light fw-bold">Real Client Testimonials</h2>
+                <h3 class="text-light pb-5">Don't take our word for it, here's what our clients say:</h3>
+                <div class="col d-flex justify-content-evenly">
+                        <div class="card p-3" style="width: 20rem;">
+                                <img src="http://source.unsplash.com/200x200/?ITCompany" class="card-img-top, circleimg"
+                                        alt="...">
+                                <div class="card-body">
+                                        <h5 class="card-title fw-bold">Everwin Technology, Pune</h5>
+                                        <p class="card-text">Got the Website Live within 12 Hours. Excellent Work with
+                                                affordable rates. We have done 2 websites for our different companies in no more
+                                                than 2 days.</p>
+                                </div>
+                        </div>&nbsp;
+        
+                        <div class="card p-3" style="width: 20rem;">
+                                <img src="http://source.unsplash.com/200x200/?man" class="card-img-top, circleimg" alt="...">
+                                <div class="card-body">
+                                        <h5 class="card-title fw-bold">Rajat Mittal</h5>
+                                        <p class="card-text">Very good support provided by the team. i really appreciate the
+                                                efforts done by the team.. Very good service. Would rate it 5out of 5</p>
+                                </div>
+                        </div>&nbsp;
+        
+                        <div class="card p-3" style="width: 20rem;">
+                                <img src="http://source.unsplash.com/200x200/?woman" class="card-img-top, circleimg" alt="...">
+                                <div class="card-body">
+                                        <h5 class="card-title fw-bold">Mary Rose</h5>
+                                        <p class="card-text">Very reasonable price compared in market…. awsome customer
+                                                experience… cheers guys</p>
+                                </div>
+                        </div>
+                </div>
+                <br>
+                <div class="col d-flex justify-content-evenly pb-3">
+                        <div class="card p-3" style="width: 20rem;">
+                                <img src="http://source.unsplash.com/200x200/?Helth-care" class="card-img-top, circleimg"
+                                        alt="...">
+                                <div class="card-body">
+                                        <h5 class="card-title fw-bold">Yellow Care Hospital</h5>
+                                        <p class="card-text">Successfully completed my website which is amazing work. I like it,
+                                                very helpful and ready to solve your write-ups issue. I will give them 100/100
+                                        </p>
+                                </div>
+                        </div>&nbsp;
+        
+                        <div class="card p-3" style="width: 20rem;">
+                                <img src="http://source.unsplash.com/200x200/?stock market" class="card-img-top, circleimg"
+                                        alt="...">
+                                <div class="card-body ">
+                                        <h5 class="card-title fw-bold ">Stock bricks traders</h5>
+                                        <p class="card-text">I got the website designed for my start-up from Zauca. From the day
+                                                I decided to go with Zauca…Read More on Google Reviews</p>
+                                </div>
+                        </div>&nbsp;
+        
+                        <div class="card p-3" style="width: 20rem;">
+                                <img src="http://source.unsplash.com/200x200/?start up" class="card-img-top, circleimg"
+                                        alt="...">
+                                <div class="card-body">
+                                        <h5 class="card-title fw-bold">KSA Expoters</h5>
+                                        <p class="card-text">Amazing experience..very helpful and the most important, real time
+                                                services are here.Thanks for the support</p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        </main>
+        <footer class="py-2  bg-light fw-bolder fttr " style="border: solid 1px ; ">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+                    <li class="nav-item"><a href="contactus.html" class="nav-link px-2 text-muted">contactus</a></li>
+                    <li class="nav-item"><a href="feedback.html" class="nav-link px-2 text-muted">feedback</a></li>
+                </ul>
+                <p class="text-center ">© 2022 web X, inc</p>
+            </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+
+</body>
+
+</html>
